@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  height: calc(var(--vh, 1vh) * 100);
+  width: 100%;
+  background: gray;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  max-height: 100%;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  background-color: #3A5059;
+}
+
+.nav {
+  width: 100%;
+  height: 2.5em;
+  background: #F2DC98;
+  position: absolute;
+  bottom: 0;
+}
+
+.container {
+  background: gray;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  scroll-snap-align: start;
+  scroll-behavior: smooth;
+  display: grid;
+  grid-template-columns: 2em 1fr 2em;
+  grid-template-rows: 6em 3fr 5em 1fr 2.5em;
+  grid-template-areas: 'dots . .' '. content .' '. text .' '. . . ' 'nav nav nav';
+}
+
+.container .dots {
+  background: indianred;
+  grid-area: dots;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: .5em;
+}
+
+.container .dots .dot {
+  width: .8em;
+  height: .8em;
+  border: .1em solid #F2DC98;
+  border-radius: 50%;
+}
+
+.container .content {
+  background: green;
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .text {
+  background: palevioletred;
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.container .text h1 {
+  color: #F2DC98;
+  font-size: .9rem;
+  font-family: helvetica;
+  font-weight: 300;
+  letter-spacing: .1em;
+  margin-bottom: .1em;
+}
+
+.container .text p {
+  color: #8F8F8F;
+  font-size: .8rem;
+  font-family: helvetica;
+  font-weight: 200;
+  letter-spacing: .2em;
+}
+
+.one .dot1 {
+  background: #F2DC98;
+}
+
+.two {
+  background: #506D7A;
+}
+
+.two .dot2 {
+  background: #F2DC98;
+}
+
+.three .dot3 {
+  background: #F2DC98;
+}
+/*# sourceMappingURL=grid.css.map */

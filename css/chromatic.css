@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: calc(var(--vh, 1vh) * 100);
+  width: 100%;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #787E65;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 98%;
+  height: 3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul .logo {
+  width: 2.4em;
+}
+
+nav ul .logoFill {
+  stroke: #DBD189;
+}
+
+main {
+  height: calc(var(--vh, 1vh) * 100);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 95%;
+  width: 98%;
+  display: grid;
+  grid-template-columns: 1fr 3.5em;
+  grid-template-rows: 1fr 3em;
+  grid-template-areas: 'content notes' 'nav nav';
+}
+
+.content {
+  grid-area: content;
+  position: relative;
+}
+
+.content .title h1 {
+  font-family: helvetica;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 0.85em;
+  letter-spacing: .08em;
+  color: #5e634f;
+  opacity: 80%;
+}
+
+.content .title h1 .scale {
+  line-height: 1.4em;
+}
+
+.content .title p {
+  font-family: helvetica;
+  font-weight: 500;
+  font-size: .6rem;
+  color: salmon;
+  letter-spacing: .12em;
+  position: absolute;
+  bottom: 0;
+}
+
+.notes {
+  grid-area: notes;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notes .noteText {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notes .noteText p {
+  margin-top: .35em;
+  margin-bottom: .35em;
+  font-family: helvetica;
+  font-weight: 300;
+  font-size: .8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  color: #8A8A8A;
+}
+
+.notes .circles {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.notes .circles .colourCircles {
+  position: absolute;
+  height: 100%;
+  width: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.notes .circles .greyCircles {
+  position: absolute;
+  height: 100%;
+  width: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  z-index: -1;
+}
+
+.mute {
+  opacity: 0;
+}
+
+.unmute {
+  opacity: 100%;
+  transition: .8s;
+}
+/*# sourceMappingURL=chromatic.css.map */

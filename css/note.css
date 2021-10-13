@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html, body {
+  height: calc(var(--vh, 1vh) * 100);
+  width: 100%;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #787E65;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 98%;
+  height: 3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul .logo {
+  width: 2.4em;
+}
+
+nav ul .logoFill {
+  stroke: #DBD189;
+}
+
+main {
+  height: calc(var(--vh, 1vh) * 100);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.grid {
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 95%;
+  width: 98%;
+  display: grid;
+  grid-template-columns: 1fr 3.5em;
+  grid-template-rows: 1fr 3em;
+  grid-template-areas: 'content notes' 'nav nav';
+}
+
+.content {
+  grid-area: content;
+  position: relative;
+}
+
+.content .title h1 {
+  font-family: helvetica;
+  font-weight: 300;
+  font-size: 1.8rem;
+  margin-top: -.15em;
+  color: #5e634f;
+  opacity: 80%;
+  letter-spacing: .1em;
+}
+
+.content .title p {
+  font-family: helvetica;
+  font-weight: 300;
+  font-size: .75rem;
+  color: #7A7A7A;
+  line-height: 1.1em;
+  letter-spacing: .1em;
+  margin-top: .4em;
+}
+
+.content .intervalText {
+  position: absolute;
+  bottom: 0;
+}
+
+.content .intervalText h1 {
+  font-family: helvetica;
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: #5e634f;
+  opacity: 80%;
+}
+
+.content .intervalText .subhead {
+  font-size: .75rem;
+  font-weight: 400;
+  margin-bottom: .1em;
+}
+
+.content .intervalText p {
+  font-family: helvetica;
+  font-size: .7rem;
+  font-weight: 100;
+  margin-left: .2em;
+  font-family: helvetica;
+  font-weight: 300;
+  color: #7A7A7A;
+}
+
+.content .combo {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 2em;
+  margin-bottom: .3em;
+  position: relative;
+}
+
+.content .combo .arrow {
+  width: 5em;
+  position: absolute;
+  bottom: -1.1em;
+  left: 5.4em;
+  cursor: pointer;
+}
+
+.content .combo .octArrow {
+  bottom: -1.1em;
+}
+
+.notes {
+  grid-area: notes;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notes .noteText {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notes .noteText p, .notes .noteText .mixText, .notes .noteText .sharpText {
+  margin-top: .35em;
+  margin-bottom: .35em;
+  font-family: helvetica;
+  font-weight: 300;
+  font-size: .8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  color: #8A8A8A;
+}
+
+.notes .noteText .mixText {
+  position: relative;
+}
+
+.notes .noteText .mixText .sharpText {
+  position: absolute;
+}
+
+.notes .noteText .mixText .flatText {
+  position: absolute;
+}
+
+.notes .circles {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.notes .circles .colourCircles {
+  position: absolute;
+  height: 100%;
+  width: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.notes .circles .greyCircles {
+  position: absolute;
+  height: 100%;
+  width: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  z-index: -1;
+}
+
+.notes .circles .bgCircles {
+  position: absolute;
+  height: 100%;
+  width: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  z-index: -2;
+}
+
+.disappear {
+  opacity: 0;
+}
+
+.color {
+  fill: #ff2a00;
+}
+/*# sourceMappingURL=note.css.map */

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/css/eye.css">
+    <link rel="icon" href="/content/bulb.svg">
+</head>
+<body>
+
+
+    <main>
+
+        <nav>
+            <a href="/index.html">
+                <svg class="home" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.5 19.94"><polyline points="18 7.94 18 1.94 14.5 1.94 14.5 4.94" fill="none" stroke="#f2dc98" stroke-miterlimit="10"/><rect x="6.84" y="13.44" width="4.82" height="6" fill="none" stroke="#f2dc98" stroke-miterlimit="10"/><polygon points="18 19.44 18 7.47 9.25 0.63 0.5 7.47 0.5 19.44 18 19.44" fill="none" stroke="#f2dc98" stroke-miterlimit="10"/></svg>
+            </a>
+        </nav>
+  
+        <div class="content">
+            <div class="container">
+
+            <!--INTRO-->
+            <div class="introText">
+                <p>Interact with the image to reveal additional information.</p>
+            </div>
+            
+            <!--EYE-->
+            <div class="eyeContainer">
+                <svg class="eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 934.63 789.28">
+                    <path class="background" d="M931.58 321.42h-56.83C840.45 140.13 681.31 3 490.05 3 273.75 3 98.41 178.34 98.41 394.64s175.34 391.64 391.64 391.64c191.26 0 350.4-137.13 384.7-318.42h56.83Z" fill="none" stroke="#061d33" stroke-miterlimit="10" stroke-width="6" opacity=".2"/>
+                    <polygon class="light lightL" points="0,463.29 0,325.99 603.14,394.64" fill="#061d33" opacity=".4"/>
+                    <polygon class="light lightR" points="819.54,368.74 819.54,420.54 603.14,394.64" fill="#061d33" opacity=".4"/>
+                    <path class="button cornea" d="M233 676V556.05a198.08 198.08 0 0 0 0 347.94V783.74H267V676.3Z" transform="translate(-97.42 -335.38)" fill="#061d33" opacity=".75"/>
+                    <path class="button lens" d="M391 730c0 60.61-42.15 109.74-59.19 109.74S300.93 790.63 300.93 730s13.82-109.74 30.87-109.74S391 669.41 391 730Z" transform="translate(-97.42 -335.38)" fill="#061d33" opacity=".75"/>
+                    <path class="button retina" d="M934.81 610.83c23.8 0 43.1 53.37 43.1 119.19s-19.3 119.19-43.1 119.19-23.81-238.38 0-238.38Z" transform="translate(-97.42 -335.38)" fill="#061d33" opacity=".75"/>
+                </svg>
+            </div>
+
+            <!--TEXT-->
+            <div class="textContainer">
+                <div class="text corneaText"> 
+                    <h1>Cornea</h1>
+                    <p>
+                        Light enters the eye through the cornea and is refracted towards the pupil.
+                    </p>
+                </div>
+
+                <div class="text lensText"> 
+                    <h1>Lens</h1>
+                    <p>
+                        The lens brings light into focus. 
+                    </p>
+                </div>
+
+                <div class="text retinaText"> 
+                    <h1>Retina</h1>
+                    <p>
+                    A layer of tissue containing photoreceptors; cells which are receptive to light. 
+                    </p>
+                </div> 
+            </div>
+
+            <!--SIDETEXT-->
+            <div class="sideTextContainer">
+                <div class="sideText pupilText"> 
+                    <h1>Pupil</h1>
+                    <p>
+                        The iris controls the size of the pupil which in turn controls the amount of light that reaches the lens.
+                    </p>
+                </div>
+
+                <div class="sideText foveaText"> 
+                    <h1>Fovea</h1>
+                    <p>
+                        A point in the retina where focused light produces the clearest image.
+                    </p>
+                </div>
+
+                <div class="sideText coneText"> 
+                    <h1>Cones</h1>
+                    <p>
+                        Receptive to dim light. 
+                    </p>
+                </div>
+
+                <div class="sideText rodText"> 
+                    <h1>Rods</h1>
+                    <p>
+                    Receptive to bright light. 
+                    </p>
+                </div>
+            </div>
+        
+            <!--CIRCLE-->
+            <div class="circleContainer">
+                <svg class="circle lensCircle" xmlns="http://www.w3.org/2000/svg" viewBox="-14 -14 130 130"> 
+                    <circle class="blurC" cx="51" cy="51" r="51" fill="#061d33" opacity=".4" filter="url(#blurFilter)"/>
+                    <filter id="blurFilter"><feGaussianBlur class="blur" stdDeviation="0"/></filter>
+                </svg>
+
+                <svg class="circle corneaCircle" xmlns="http://www.w3.org/2000/svg" viewBox="-14 -14 130 130">
+                    <circle class="pupilC" cx="51" cy="51" r="32.3" fill="#061d33"/>
+                    <circle class="irisC" cx="51" cy="51" r="51" fill="#061d33" opacity=".4"/>
+                </svg>
+
+                <svg class="circle retinaCircle" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="-14 -14 130 130">
+                    <circle class="retinaC" cx="51" cy="51" r="51" fill="#061d33" opacity=".4"/>
+                    <polygon class="cone" points="45.87 88.7 45.87 79.04 57.8 83.97 45.87 88.7" fill="blue"/>
+                    <rect class="rod" x="45.87" y="65.44" width="11.93" height="4.39" fill="#061d33" opacity=".67"/>
+                    <polygon class="cone" data-name="cone" points="45.87 56.23 45.87 46.57 57.8 51.5 45.87 56.23" fill="green"/>
+                    <rect class="rod" data-name="rod" x="45.87" y="32.97" width="11.93" height="4.39" fill="#061d33" opacity=".67"/>
+                    <polygon class="cone" data-name="cone" points="45.87 23.76 45.87 14.1 57.8 19.03 45.87 23.76" fill="red"/>
+                </svg>
+            </div>
+
+            <!--SLIDER-->
+            <div class="sliderContainer">
+                <input class="slider retinaSlider" type="range" min="0" max="1" value="0" step="0.000000000001">
+                <input class="slider lensSlider" type="range" min="0" max="1" value="0" step="0.000000000001">
+                <input class="slider corneaSlider" type="range" min="0" max="1" value="0" step="0.000000000001">
+            </div>
+        </div><!--CONTAINER-->
+
+        </div> <!--CONTENT-->
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="/js/eye.js"></script>
+    <script src="/js/new.js"></script>
+</body>
+</html>

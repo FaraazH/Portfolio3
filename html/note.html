@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chromatic</title>
+    <link rel="stylesheet" href="/css/note.css">
+</head>
+<body>
+
+    <!--NAVIGATION-->
+    <nav>
+        <ul>
+            <li><a href="/html/chromatic.html">
+                <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39.01 19.9">
+                    <g class="chromaticLogo" fill="none" stroke="lightgray" stroke-miterlimit="10" stroke-width="2.5">
+                      <path d="M37.49 19.9a18 18 0 1 0-36 0" opacity=".65"/>
+                      <path d="M33.37 19.9a13.87 13.87 0 1 0-27.74 0" opacity=".65"/>
+                      <path d="M29.33 19.9a9.83 9.83 0 1 0-19.66 0" opacity=".65"/>
+                    </g>
+                </svg>                
+            </a></li>
+
+            <li><a href="/html/frequency.html">
+                <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 17.13">
+                    <path d="M11.47 2.43c3.62 0 5.56 3.12 7.62 6.42 2.24 3.58 4.54 7.28 9.47 7.28s7.24-3.7 9.47-7.28l.16-.26H36c-2 3.18-3.93 6.1-7.43 6.1S23 11.57 20.94 8.27C18.71 4.69 16.4 1 11.48 1S4.24 4.69 2.01 8.27l-.2.32h2.2C6 5.38 7.94 2.43 11.47 2.43Z" fill="lightgray" stroke="lightgray" stroke-miterlimit="10" stroke-width="1.5" class="frequencyLogo" opacity=".65"/>
+                </svg>                
+            </a></li>
+
+            <li><a href="/html/interval.html"> 
+                <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 -2 40.01 15.44">
+                    <polyline class="intervalLogo" points="38.01 0 38.01 11.44 2 11.44 2 0" fill="none" stroke="lightgray" stroke-miterlimit="10" stroke-width="3" opacity=".65"/>
+                </svg>                
+            </a></li>
+
+            <li><a href="/html/note.html">
+                <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="-3.1 0 17.35 17.35">
+                    <circle class="noteLogo" cx="8.67" cy="8.67" r="4" fill="none" stroke="lightgray" stroke-miterlimit="10" stroke-width="1.5" opacity=".65"/>
+                </svg>                
+            </a></li>
+        </ul>
+    </nav>
+
+   <!--MAIN-->
+   <main>
+
+    <!--GRID-->
+    <div class="grid">
+
+    <!--CONTENT-->
+    <div class="content">
+        <div class="title">
+            <h1>Notes</h1>
+            <p>Sharps and flats <br> share the same note</p>
+        </div>
+
+        <div class="intervalText">
+
+            <div class="halfStep">
+                <div class="combo">
+                    <h1>#</h1>
+                    <svg class="arrow sharpButton" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58 5.65"><path class="sharpColour" d="M1145.47,214.57l-.32,1,4.26,1.43-53.53-.12v1l53.22.12-3.94,1.32.32.95,8.41-2.82Z" transform="translate(-1095.87 -214.57)" fill="#5e634f" opacity="0.5"/></svg>    
+                </div>
+                <p class="subhead">Sharp</p>
+                <p>Sharps ascend from A1 to A2</p>
+            </div>
+
+            <div class="wholeStep">
+                <div class="combo">
+                    <h1>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15.11936" height="41.51818" viewBox="0 -5 20.11936 46.51818">
+                            <polyline points="1.5 13.893 13.619 13.893 13.619 27.786 1.5 27.786 1.5 13.893 1.5 0" fill="none" stroke="#5e634f" stroke-miterlimit="10" stroke-width="2.5"/>
+                            <line x1="13.61936" y1="27.625" x2="13.61936" y2="41.51818" fill="none" stroke="#5e634f" stroke-miterlimit="10" stroke-width="2.5"/>
+                          </svg>
+
+                    </h1>
+                    <svg class="arrow naturalButton" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58 5.65"><path class="naturalColour" d="M1145.47,214.57l-.32,1,4.26,1.43-53.53-.12v1l53.22.12-3.94,1.32.32.95,8.41-2.82Z" transform="translate(-1095.87 -214.57)" fill="#5e634f" opacity="0.5"/></svg>
+                </div>
+                <p class="subhead">Natural</p> 
+                <p>BC and EF share no sharp or flat</p>
+            </div>
+
+            <div class="octave">
+                <div class="combo">
+                    <h1><i>b</i></h1>
+                    <svg class="arrow flatButton octArrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58 5.65"><path class="flatColour" d="M1145.47,214.57l-.32,1,4.26,1.43-53.53-.12v1l53.22.12-3.94,1.32.32.95,8.41-2.82Z" transform="translate(-1095.87 -214.57)" fill="#5e634f" opacity="0.5"/></svg>   
+                </div>
+                <p class="subhead">Flat</p>
+                <p>Flats descend from A2 to A1</p>   
+            </div>
+
+        </div>
+
+    </div>
+        
+        <!--NOTES-->
+        <div class="notes">
+
+            <!--TEXT-->
+            <div class="noteText">
+                <p class="naturalText">A2</p>
+
+                <div class="mixText">
+                    <p class="sharpText">A#</p>
+                    <p class="flatText">Ab</p>
+                </div>
+
+                <p class="naturalText">B</p>
+                <p class="naturalText">C</p>
+
+                <div class="mixText">
+                    <p class="sharpText">C#</p>
+                    <p class="flatText">Cb</p>
+                </div>
+            
+                <p class="naturalText">D</p>
+
+                <div class="mixText">
+                    <p class="sharpText">D#</p>
+                    <p class="flatText">Db</p>
+                </div>
+
+                <p class="naturalText">E</p>
+                <p class="naturalText">F</p>
+
+                <div class="mixText">
+                    <p class="sharpText">F#</p>
+                    <p class="flatText">Fb</p>
+                </div>
+
+                <p class="naturalText">G</p>
+
+                <div class="mixText">
+                    <p class="sharpText">G#</p>
+                    <p class="flatText">Gb</p>
+                </div>
+
+                <p class="naturalText">A1</p>
+            </div>
+
+
+
+            <!--CIRCLES-->
+            <div class="circles">
+
+                <!--COLOUR CIRCLES-->
+                <div class="colourCircles">
+
+                    <!--aTwo-->
+                    <svg class="aTwoColour" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <circle class="aTwo naturalNote" cx="16.5" cy="16.5" r="16.5" fill="#dbd189"/>
+                    </svg>
+
+                    <!--aSharp-->
+                    <svg class="aSharpColour" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <g class="aSharp">
+                        <path class="flatNote" d="M976.78,179.83a16.5,16.5,0,0,1-33,0" transform="translate(-943.78 -163.33)" fill="#cea774"/>
+                        <path class="sharpNote" d="M943.78,179.83a16.5,16.5,0,1,1,33,0" transform="translate(-943.78 -163.33)" fill="#dbd189"/>
+                        </g>
+                    </svg>
+
+                    <!--b-->
+                    <svg class="bColour" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <circle class="b naturalNote" cx="16.5" cy="16.5" r="16.5" fill="#cea774"/>
+                    </svg>
+
+                    <!--c-->
+                    <svg class="cColour" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <circle class="c naturalNote" cx="16.5" cy="16.5" r="16.5" fill="#d69f96"/>
+                    </svg>
+
+                    <!--cSharp-->
+                    <svg class="cSharpColour" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <g class="cSharp">
+                        <path class="flatNote" d="M976.78,395.7a16.5,16.5,0,1,1-33,0" transform="translate(-943.78 -379.2)" fill="#af6d6d"/>
+                        <path class="sharpNote" d="M943.78,395.7a16.5,16.5,0,0,1,33,0" transform="translate(-943.78 -379.2)" fill="#d69f96"/>
+                        </g>
+                    </svg>
+
+                    <!--d-->
+                    <svg class="dColour" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <circle class="d naturalNote" cx="16.5" cy="16.5" r="16.5" fill="#af6d6d"/>
+                    </svg>
+
+                    <!--dSharp-->
+                    <svg class="dSharpColour" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <g class="dSharp">
+                        <path class="flatNote" d="M976.78,539.62a16.5,16.5,0,1,1-33,0" transform="translate(-943.78 -523.12)" fill="#9a96bc"/>
+                        <path class="sharpNote" d="M943.78,539.62a16.5,16.5,0,0,1,33,0" transform="translate(-943.78 -523.12)" fill="#af6d6d"/>
+                        </g>
+                    </svg>
+
+                    <!--e-->
+                    <svg class="eColour" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <circle class="e naturalNote" cx="16.5" cy="16.5" r="16.5" fill="#9a96bc"/>
+                    </svg>
+
+                    <!--f-->
+                    <svg class="fColour" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <circle class="f naturalNote" cx="16.5" cy="16.5" r="16.5" fill="#8bb7c1"/>
+                    </svg>
+
+                    <!--fSharp-->
+                    <svg class="fSharpColour" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <g class="fSharp">
+                        <path class="flatNote" d="M976.78,755.49a16.5,16.5,0,0,1-33,0" transform="translate(-943.78 -738.99)" fill="#79af90"/>
+                        <path class="sharpNote" d="M943.78,755.49a16.5,16.5,0,0,1,33,0" transform="translate(-943.78 -738.99)" fill="#8bb7c1"/>
+                        </g>
+                    </svg>
+
+                    <!--g-->
+                    <svg class="gColour" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <circle class="g naturalNote" cx="16.5" cy="16.5" r="16.5" fill="#79af90"/>
+                    </svg>
+
+                    <!--gSharp-->
+                    <svg class="gSharpColour" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <g class="gSharp">
+                            <path class="flatNote" d="M976.78,899.41a16.5,16.5,0,1,1-33,0" transform="translate(-943.78 -882.91)" fill="#dbd189"/>
+                            <path class="sharpNote" d="M943.78,899.41a16.5,16.5,0,0,1,33,0" transform="translate(-943.78 -882.91)" fill="#79af90"/>
+                        </g>
+                    </svg>
+
+                    <!--aOne-->
+                    <svg class="aOneColour" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <circle class="aOne naturalNote" cx="16.5" cy="16.5" r="16.5" fill="#dbd189"/>
+                    </svg>
+                </div> 
+
+
+                <!--GREY CIRCLES-->
+                <div class="greyCircles">
+                    <!--aTwo-->
+                    <svg class="aTwoGrey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <circle cx="16.5" cy="16.5" r="16.5" fill="lightgray"/>
+                    </svg>
+
+                    <!--aSharp-->
+                    <svg class="aSharpGrey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <path d="M976.78,899.41a16.5,16.5,0,1,1-33,0" transform="translate(-943.78 -882.91)" fill="darkgray"/>
+                        <path d="M943.78,899.41a16.5,16.5,0,0,1,33,0" transform="translate(-943.78 -882.91)" fill="lightgray"/>
+                    </svg>
+
+                    <!--b-->
+                    <svg class="bGrey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <circle cx="16.5" cy="16.5" r="16.5" fill="lightgray"/>
+                    </svg>
+
+                    <!--c-->
+                    <svg class="cGrey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <circle cx="16.5" cy="16.5" r="16.5" fill="lightgray"/>
+                    </svg>
+
+                    <!--cSharp-->
+                    <svg class="cSharpGrey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <path d="M976.78,899.41a16.5,16.5,0,1,1-33,0" transform="translate(-943.78 -882.91)" fill="darkgray"/>
+                        <path d="M943.78,899.41a16.5,16.5,0,0,1,33,0" transform="translate(-943.78 -882.91)" fill="lightgray"/>
+                    </svg>
+
+                    <!--d-->
+                    <svg class="dGrey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <circle cx="16.5" cy="16.5" r="16.5" fill="lightgray"/>
+                    </svg>
+
+                    <!--dSharp-->
+                    <svg class="dSharpGrey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <path d="M976.78,899.41a16.5,16.5,0,1,1-33,0" transform="translate(-943.78 -882.91)" fill="darkgray"/>
+                        <path d="M943.78,899.41a16.5,16.5,0,0,1,33,0" transform="translate(-943.78 -882.91)" fill="lightgray"/>
+                    </svg>
+
+                    <!--e-->
+                    <svg class="eGrey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <circle cx="16.5" cy="16.5" r="16.5" fill="lightgray"/>
+                    </svg>
+
+                    <!--f-->
+                    <svg class="fGrey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <circle cx="16.5" cy="16.5" r="16.5" fill="lightgray"/>
+                    </svg>
+
+                    <!--fSharp-->
+                    <svg class="fSharpGrey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <path d="M976.78,899.41a16.5,16.5,0,1,1-33,0" transform="translate(-943.78 -882.91)" fill="darkgray"/>
+                        <path d="M943.78,899.41a16.5,16.5,0,0,1,33,0" transform="translate(-943.78 -882.91)" fill="lightgray"/>
+                    </svg>
+
+                    <!--g-->
+                    <svg class="gGrey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <circle cx="16.5" cy="16.5" r="16.5" fill="lightgray"/>
+                    </svg>
+
+                    <!--gSharp-->
+                    <svg class= "gSharpGrey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <path d="M976.78,899.41a16.5,16.5,0,1,1-33,0" transform="translate(-943.78 -882.91)" fill="darkgray"/>
+                        <path d="M943.78,899.41a16.5,16.5,0,0,1,33,0" transform="translate(-943.78 -882.91)" fill="lightgray"/>
+                    </svg>
+
+                    <!--aOne-->
+                    <svg class="aOneGrey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <circle cx="16.5" cy="16.5" r="16.5" fill="lightgray"/>
+                    </svg>
+                </div> 
+
+
+
+                <!--BG CIRCLES-->
+                <div class="bgCircles">
+                    <!--aTwo-->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <circle cx="16.5" cy="16.5" r="16.5" fill="lightgray"/>
+                    </svg>
+
+                    <!--aSharp-->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <path d="M976.78,899.41a16.5,16.5,0,1,1-33,0" transform="translate(-943.78 -882.91)" fill="darkgray"/>
+                        <path d="M943.78,899.41a16.5,16.5,0,0,1,33,0" transform="translate(-943.78 -882.91)" fill="lightgray"/>
+                    </svg>
+
+                    <!--b-->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <circle cx="16.5" cy="16.5" r="16.5" fill="lightgray"/>
+                    </svg>
+
+                    <!--c-->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <circle cx="16.5" cy="16.5" r="16.5" fill="lightgray"/>
+                    </svg>
+
+                    <!--cSharp-->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <path d="M976.78,899.41a16.5,16.5,0,1,1-33,0" transform="translate(-943.78 -882.91)" fill="darkgray"/>
+                        <path d="M943.78,899.41a16.5,16.5,0,0,1,33,0" transform="translate(-943.78 -882.91)" fill="lightgray"/>
+                    </svg>
+
+                    <!--d-->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <circle cx="16.5" cy="16.5" r="16.5" fill="lightgray"/>
+                    </svg>
+
+                    <!--dSharp-->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <path d="M976.78,899.41a16.5,16.5,0,1,1-33,0" transform="translate(-943.78 -882.91)" fill="darkgray"/>
+                        <path d="M943.78,899.41a16.5,16.5,0,0,1,33,0" transform="translate(-943.78 -882.91)" fill="lightgray"/>
+                    </svg>
+
+                    <!--e-->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <circle cx="16.5" cy="16.5" r="16.5" fill="lightgray"/>
+                    </svg>
+
+                    <!--f-->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <circle cx="16.5" cy="16.5" r="16.5" fill="lightgray"/>
+                    </svg>
+
+                    <!--fSharp-->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <path d="M976.78,899.41a16.5,16.5,0,1,1-33,0" transform="translate(-943.78 -882.91)" fill="darkgray"/>
+                        <path d="M943.78,899.41a16.5,16.5,0,0,1,33,0" transform="translate(-943.78 -882.91)" fill="lightgray"/>
+                    </svg>
+
+                    <!--g-->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <circle cx="16.5" cy="16.5" r="16.5" fill="lightgray"/>
+                    </svg>
+
+                    <!--gSharp-->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <path d="M976.78,899.41a16.5,16.5,0,1,1-33,0" transform="translate(-943.78 -882.91)" fill="darkgray"/>
+                        <path d="M943.78,899.41a16.5,16.5,0,0,1,33,0" transform="translate(-943.78 -882.91)" fill="lightgray"/>
+                    </svg>
+
+                    <!--aOne-->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <circle cx="16.5" cy="16.5" r="16.5" fill="lightgray"/>
+                    </svg>
+                </div> 
+
+            </div> <!--CIRCLES-->
+        </div> <!--NOTES-->
+    </div> <!--GRID-->
+   </main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+<script src="/js/note.js"></script>
+</body>
+</html>

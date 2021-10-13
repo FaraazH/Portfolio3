@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100%;
+    user-select: none;
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+}
+
+//NAVIGATION
+nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #787E65;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    ul {
+        padding-left: 1em;
+        padding-right: 1em;
+        // width: clamp(330px, 90%, 500px);
+        width: 98%;
+        height: 3em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        li {
+            list-style: none;
+        }
+
+        .logo {
+            width: 2.4em;
+        }
+
+        .logoFill{
+            stroke: #DBD189;
+            fill: #DBD189;
+        }
+    }
+}
+
+//MAIN
+main {
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+//GRID
+.grid {
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 95%;
+    // width: clamp(330px, 90%, 500px);
+    width: 98%;
+    display: grid;
+    grid-template-columns: 1fr 3.5em;
+    grid-template-rows: 1fr 3em;
+    grid-template-areas: 
+    'content notes'
+    'nav nav';
+}
+
+//CONTENT
+.content {
+    grid-area: content;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .title {
+        
+        h1 {
+            font-family: helvetica;
+            font-weight: 300;
+            font-size: 1.8rem;
+            line-height: 0.85em;
+            letter-spacing: .08em;
+            color: #5e634f;
+            opacity: 80%;
+        }
+
+        p {
+            font-family: helvetica;
+            font-weight: 300;
+            font-size: .75rem;
+            color: #7A7A7A;
+            line-height: 1.1em;
+            letter-spacing: .1em;
+            margin-top: .4em;
+        }
+    }
+
+    .waves {
+        width: 85%;
+        height: 100%;
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        'waveOne'
+        'waveTwo'
+        'waveThree';
+
+        .wave {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+             width: clamp(200px, 90%, 400px);
+
+            .waveOne {
+                grid-area: waveOne;
+            }
+    
+            .waveTwo {
+                grid-area: waveTwo;
+            }
+    
+            .waveThree {
+                grid-area: waveThree;
+            }
+        }
+
+        .waveInner {
+            opacity: 30%;
+        }
+
+        .waveText {
+            font-family: helvetica;
+            font-weight: 100;
+            font-size: .7rem;
+            color: #8a8a8a;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+}
+
+//NOTES
+.notes {
+    grid-area: notes;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    .noteText {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        p {
+            font-family: helvetica;
+            font-weight: 300;
+            font-size: .8rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            width: 100%;
+            color: #8A8A8A;
+        }
+
+        .hzText {
+            position: relative;
+
+            .hzTextInner {
+                position: absolute;
+                top: 2.2em;
+                font-size: .5rem;
+                letter-spacing: .05em;
+            }
+
+            .hertz {
+                margin-left: -.1em;
+            }
+        }
+    }
+
+    .circles {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+
+        .circle {
+            position: absolute;
+            height: 100%;
+            width: 1.5em;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;   
+            cursor: pointer; 
+        }
+
+        .greyCircle {
+            z-index: -1;
+        }
+    }
+}
